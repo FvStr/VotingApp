@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">aplikasi voting</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_description">Aplikasi ini adalah prototype untuk pemilihan umum yang dibuat oleh developer Akmal dan Suta. Fitur utamanya termasuk splash screen dan login. Halaman utama menampilkan foto dua kandidat, yang dapat ditekan untuk melihat informasi lengkap. Terdapat juga tombol untuk mengakses profil pengguna dan informasi aplikasi. Setelah membaca informasi kandidat, pengguna dapat memilih kandidat, yang kemudian akan memunculkan pop-up konfirmasi. Setelah memilih, pengguna akan melihat pesan terima kasih atas partisipasi mereka.</string>
+</resources>

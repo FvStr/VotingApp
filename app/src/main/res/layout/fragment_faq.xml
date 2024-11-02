@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faq"
+    android:background="@drawable/bg2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Logo Aplikasi -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/voteicon"
+                android:contentDescription="@string/logo_description"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- CardView for Application Description -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/appLogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aplikasi ini merupakan sebuah tugas mata kuliah Aplikasi Bergerak. Dalam tugas ini, developer (Akmal dan Suta) berusaha membuat sebuah prototype aplikasi untuk pemilihan umum. Aplikasi ini memiliki fitur splash screen dan login pada bagian awal. Selanjutnya, pada halaman utama ada foto dari 2 kandidat pemilihan yang apabila ditekan akan memunculkan data lengkap mereka. Selain itu, pada halaman utama juga ada tombol yang dapat mengakses profil user serta informasi mengenai aplikasi itu sendiri. Saat user sudah selesai membaca halaman informasi mengenai paslon, akan ada tombol untuk memilih paslon tersebut. Setelah tombol tersebut ditekan, akan muncul pop up untuk mengkonfirmasi ulang pilihan dari user. Setelah memilih, ada screen dengan tulisan 'Terima kasih karena sudah berpartisipasi dalam pemilihan.'"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

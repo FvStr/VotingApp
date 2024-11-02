@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg3">
+
+    <!-- Konten dapat di-scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chooseButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Nama Paslon -->
+            <TextView
+                android:id="@+id/paslonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reza Mustofa"
+                android:textSize="24sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Foto Paslon -->
+            <ImageView
+                android:id="@+id/paslon2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/paslon2"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_image_background"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Informasi Paslon -->
+            <TextView
+                android:id="@+id/paslonInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reza Mustofa adalah seorang pemimpin berpengalaman dalam bidang ekonomi dan administrasi publik. Dengan latar belakang pendidikan di bidang manajemen dan lebih dari 15 tahun pengalaman di sektor pemerintahan, Reza dikenal sebagai sosok yang tegas dan berintegritas tinggi. Ia berkomitmen untuk membangun pemerintahan yang transparan dan responsif terhadap kebutuhan masyarakat. Reza percaya bahwa pembangunan yang berkelanjutan hanya dapat dicapai dengan program-program nyata yang memperhatikan kesejahteraan sosial, terutama di bidang pendidikan, kesehatan, dan ekonomi. Melalui visinya, Reza siap membawa perubahan positif yang dapat dirasakan langsung oleh masyarakat luas."
+                android:textSize="18sp"
+                android:textColor="#555555"
+                android:padding="8dp"
+                android:background="#ffffff"
+                android:layout_marginBottom="24dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tombol Pilih -->
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:gravity="center"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
